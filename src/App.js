@@ -9,7 +9,8 @@ import Footer from './componentes/footer';
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false)
-  const [colaboradores, actualizarColaboradores] = useState([{
+  const [colaboradores, actualizarColaboradores] = useState([
+  {
     id: uuid(),
     equipo: "Front End",
     foto: "https://github.com/harlandlohora.png",
@@ -23,7 +24,7 @@ function App() {
     foto: "https://github.com/genesysaluralatam.png",
     nombre: "Genesys Rondón",
     puesto: "Desarrolladora de software e instructora",
-    fav: false
+    fav: true
   },
   {
     id: uuid(),
@@ -47,7 +48,7 @@ function App() {
     foto: "https://github.com/JoseDarioGonzalezCha.png",
     nombre: "Jose Gonzalez",
     puesto: "Dev FullStack",
-    fav: true
+    fav: false
   }])
 
   const [equipos, actualizarEquipos] = useState([
